@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AdhocFB]">
+  <listeners>
+    <listener class-name="fbtestngclass.Itestlistener"/>
+  </listeners>
+  <test thread-count="5" name="RegressionFB_01(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.facebook.com/"/>
+    <classes>
+      <class name="fbtestngclass.FBTutoringPractice">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="sign_in_second"/>
+        </methods>
+      </class> <!-- fbtestngclass.FBTutoringPractice -->
+    </classes>
+  </test> <!-- RegressionFB_01(failed) -->
+  <test thread-count="5" name="RegressionFB_02(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://www.facebook.com/"/>
+    <classes>
+      <class name="fbtestngclass.FBTutoringPractice">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="sign_in_second"/>
+        </methods>
+      </class> <!-- fbtestngclass.FBTutoringPractice -->
+    </classes>
+  </test> <!-- RegressionFB_02(failed) -->
+</suite> <!-- Failed suite [AdhocFB] -->

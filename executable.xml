@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name = "AdhocFB">
+
+<listeners>
+<listener class-name="fbtestngclass.Itestlistener"></listener>
+</listeners>
+
+<test name="RegressionFB_01">
+
+<parameter name="url" value="https://www.facebook.com/"></parameter>
+<parameter name="browser" value="chrome"></parameter>
+
+<classes>
+<class name="fbtestngclass.FBTutoringPractice">
+
+        <methods>
+        <exclude name="sign_in" />
+        <include name="sign_in_second" />
+        
+      	</methods>
+
+</class>
+
+</classes>
+</test>
+<test name="RegressionFB_02">
+
+<parameter name="url" value="https://www.facebook.com/"></parameter>
+<parameter name="browser" value="firefox"></parameter>
+
+<classes>
+<class name="fbtestngclass.FBTutoringPractice">
+
+        <methods>
+        <exclude name="sign_in" />
+        <include name="sign_in_second" />
+        
+      	</methods>
+
+</class>
+
+</classes>
+</test>
+</suite>
